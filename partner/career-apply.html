@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>채용공고 등록하기</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/career-apply.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div id="header">
+      <h1><a href="index.html"><img src="images/logo.png" alt="SK HYNIX"></a></h1>
+    
+      <div class="nav">
+        <ul class="gnb">
+          <li class="on"><a href="career-list.html">채용정보</a></li>
+          <li><a href="career-detail.html">지원자정보</a></li>
+        </ul>
+        <ul class="lnb">
+          <li><a href="index.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="keyvisual">
+      <div class="text_area">
+        <p class="summary_text">Start with a certified career</p>
+        <p class="title_text">인증받은 커리어로 시작합니다!</p>
+      </div>
+    </div>
+
+
+
+    <div id="container">
+      <div class="contents career-apply">
+        <ul class="bread-crumb">
+          <li>HOME</li>
+          <li>채용정보</li>
+          <li>채용공고등록</li>
+        </ul>
+        <h2>채용 공고 등록</h2>
+        <div class="tbl-wrap">
+          <table class="detail-tbl">
+            <caption>채용 공고 등록</caption>
+            <tbody>
+              <tr>
+                <th scope="row">공고명</th>
+                <td colspan="3"><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">직무</th>
+                <td colspan="3"><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">접수 기간</th>
+                <td colspan="3"><input type="date"> ~ <input type="date"></td>
+              </tr>
+              <tr>
+                <th scope="row">채용직무</th>
+                <td colspan="3"><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">근무지</th>
+                <td>
+                  <select>
+                    <option>경기</option>
+                    <option>서울</option>
+                    <option>강원</option>
+                  </select>
+                </td>
+                <th scope="row">근무부서</th>
+                <td><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">채용인원</th>
+                <td colspan="3">
+                  <span class="input-wrap">
+                    <input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span>
+                  </span>
+                  <span class="select-wrap">
+                    <select class="w150">
+                      <option>정규직</option>
+                      <option>계약직</option>
+                    </select>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="5">자격요건</th>
+                <th scope="row">학력</th>
+                <td colspan="2">
+                  <select class="w150">
+                    <option>학사이상</option>
+                    <option>고졸이상</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">전공</th>
+                <td colspan="2"><input type="text" placeholder="입력하세요" class="w150"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">외국어</th>
+                <td colspan="2">
+                  <select class="w150">
+                    <option>언어무관</option>
+                    <option>영어</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">해당 경력</th>
+                <td colspan="2" class="w150">
+                  <select class="w150">
+                    <option>경력무관</option>
+                    <option>2년이상</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">기타</th>
+                <td colspan="2"><input type="text" placeholder="입력하세요" class="w150"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">전형절차</th>
+                <td colspan="3">
+                  <input type="radio" id="document" name="case"> 서류
+                  <input type="radio" id="personality" name="case"> 인적성검사
+                  <input type="radio" id="practice" name="case"> 실무 면접
+                  <input type="radio" id="executives" name="case"> 임원 면접
+                  <input type="radio" id="health" name="case"> 건강 검진
+                  <input type="radio" id="conference" name="case"> 처우 협의
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">주요수행업무</th>
+                <td colspan="3"><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">기타</th>
+                <td colspan="3"><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+              <tr>
+                <th scope="row">문의처</th>
+                <td colspan="3"><input type="text" placeholder="입력하세요"><span class="search-clear">입력내용 지우기</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btn-wrap">
+          <a href="#url" class="btn-submit">등록</a>
+          <a href="#url">취소</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer_area">
+        <ul>
+          <li><a href="">공지사항/알림</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">개인정보 처리방침</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+
+        <address>Copyright © 2018 ALL RIGHT RESERVED</address>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    $('.btn-submit').on('click', function() {
+      alert('채용 공고 등록이 완료되었습니다');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>커리어패스</title>
+  <link href='https://fonts.googleapis.com/earlyaccess/notosanskr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/regist.css">
+
+</head>
+<body>
+  <div class="wrap">
+    <div id="header">
+        <h1><a href="index.html"><img src="images/logo.png" alt="SK HYNIX"></a></h1>
+        
+        <div class="nav">
+          <ul class="gnb">
+              <li class="on"><a href="registMgt.html">커리어패스</a></li>
+              <li><a href="resumeBuilder.html">입사지원서</a></li>
+              <li><a href="career-list.html">채용정보</a></li>
+          </ul>
+          <ul class="lnb">
+            <li><a href="my-page.html"><em class="user-name">강유미</em>님</a></li>
+          <li><a href="#url">로그아웃</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="keyvisual">
+      <div class="text_area">
+        <p class="summary_text">Start with a certified career</p>
+        <p class="title_text">인증받은 커리어로 시작합니다!</p>
+      </div>
+    </div>
+
+
+
+    <div id="container">
+      <div class="contents regist-wrap">
+        <ul class="bread-crumb">
+          <li>HOME</li>
+          <li>커리어패스</li>
+        </ul>
+        <h2>커리어패스</h2>
+
+        <div class="personal-basics">
+          <h3>개인기본사항</h3>
+          <div class="inner">
+            <div class="photo"><img src="images/img-kang.jpg" alt=""></div>
+            <ul class="clearfix">
+              <li>
+                <strong>이름 : </strong>
+                <span>강유미</span>
+              </li>
+              <li>
+                <strong>주민등록번호 :</strong >
+                <span><input type="text" class="input-medium" readonly value="830517-2******" disabled></span>
+              </li>
+              <li>
+                <strong>전화번호(HP) :</strong>
+                <span><input type="text" class="input-medium" value="010-1234-5678"><span class="search-clear">입력내용 지우기</span></span>
+              </li>
+              <li>
+                <strong>이메일 : </strong>
+                <span><input type="text" class="input-medium" value="kangyumi@ckcareer.com"><span class="search-clear">입력내용 지우기</span></span>
+              </li>
+              <li class="address">
+                <strong>주소 :</strong>
+                <span class="address-1">
+                  <input type="text" class="input-small" disabled value="04779">
+                  <button class="btn-search-address">주소찾기</button>
+                </span>
+                <span class="address-2">
+                  <input type="text" class="input-large" value="서울특별시 성동구 상원1길 5">
+                  <span class="search-clear">입력내용 지우기</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="personal-info">
+          <h3>학력사항</h3>
+          <div class="inner info-1">
+            <ul class="header">
+              <li class="degree">학위구분</li>
+              <li class="School-name">학교명</li>
+              <li class="department-name">학과명</li>
+              <li class="entrance-date">입학년원일</li>
+              <li class="graduation-date">졸업년월일</li>
+              <li class="graduated">졸업구분</li>
+              <li class="grade">학점</li>
+              <li class="file">파일첨부</li>
+              <li class="progress">진행상황</li>
+              <li class="certifi">인증</li>
+            </ul>
+            <ul class="info-list">
+              <li class="degree">
+                <select>
+                  <option selected>중졸</option>
+                  <option>고졸</option>
+                  <option>학사</option>
+                  <option>석사</option>
+                  <option>박사</option>
+                </select>
+              </li>
+              <li class="School-name"><input type="text" value="신림중학교"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="department-name"><input type="text" disabled><span class="search-clear">입력내용 지우기</span></li>
+              <li class="entrance-date"><input type="date" value="1991-03-02"></li>
+              <li class="graduation-date"><input type="date" value="1994-02-15"></li>
+              <li class="graduated">
+                <select>
+                  <option>졸업</option>
+                  <option>중퇴</option>
+                </select>
+              </li>
+              <li class="grade"><input type="text" disabled> <span>/</span> <input type="text" disabled></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-impossible" class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-impossible" class="btn request">인증요청</a></li>
+            </ul>
+            <ul class="info-list">
+              <li class="degree">
+                <select>
+                  <option>중졸</option>
+                  <option selected>고졸</option>
+                  <option>학사</option>
+                  <option>석사</option>
+                  <option>박사</option>
+                </select>
+              </li>
+              <li class="School-name"><input type="text" value="신림고등학교"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="department-name"><input type="text" disabled><span class="search-clear">입력내용 지우기</span></li>
+              <li class="entrance-date"><input type="date" value="1994-03-02"></li>
+              <li class="graduation-date"><input type="date" value="1997-02-12"></li>
+              <li class="graduated">
+                <select>
+                  <option>졸업</option>
+                  <option>중퇴</option>
+                </select>
+              </li>
+              <li class="grade"><input type="text" disabled> <span>/</span> <input type="text" disabled></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-fail" class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-fail" class="btn request">인증요청</a></li>
+            </ul>
+            <ul class="info-list">
+              <li class="degree">
+                <select>
+                  <option>중졸</option>
+                  <option>고졸</option>
+                  <option selected>학사</option>
+                  <option>석사</option>
+                  <option>박사</option>
+                </select>
+              </li>
+              <li class="School-name"><input type="text" value="동국대학교"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="department-name"><input type="text" value="멀티미디어공학"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="entrance-date"><input type="date" value="1997-03-02"></li>
+              <li class="graduation-date"><input type="date" value="2002-02-20"></li>
+              <li class="graduated">
+                <select>
+                  <option>졸업</option>
+                  <option>중퇴</option>
+                </select>
+              </li>
+              <li class="grade"><input type="text" value="4.0"> <span>/</span> <input type="text" value="4.5"></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-success"class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-success" class="btn request">인증요청</a></li>
+            </ul>
+            <ul class="info-list">
+              <li class="degree">
+                <select>
+                  <option>중졸</option>
+                  <option>고졸</option>
+                  <option>학사</option>
+                  <option selected>석사</option>
+                  <option>박사</option>
+                </select>
+              </li>
+              <li class="School-name"><input type="text" value="동국대학교 대학원"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="department-name"><input type="text" value="멀티미디어공학"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="entrance-date"><input type="date" value="2004-03-02"></li>
+              <li class="graduation-date"><input type="date" value="2006-02-25"></li>
+              <li class="graduated">
+                <select>
+                  <option>졸업</option>
+                  <option>중퇴</option>
+                </select>
+              </li>
+              <li class="grade"><input type="text" value="4.0"> <span>/</span> <input type="text" value="4.0"></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-ing" class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-ing" class="btn request">인증요청</a></li>
+            </ul>
+            <ul class="info-list">
+              <li class="degree">
+                <select>
+                  <option>중졸</option>
+                  <option>고졸</option>
+                  <option>학사</option>
+                  <option>석사</option>
+                  <option selected>박사</option>
+                </select>
+              </li>
+              <li class="School-name"><input type="text" value="동국대학교 대학원"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="department-name"><input type="text" value="멀티미디어공학"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="entrance-date"><input type="date" value="2006-03-02"></li>
+              <li class="graduation-date"><input type="date" value="2009-02-23"></li>
+              <li class="graduated">
+                <select>
+                  <option>졸업</option>
+                  <option>중퇴</option>
+                </select>
+              </li>
+              <li class="grade"><input type="text" value="3.9"> <span>/</span> <input type="text" value="4.0"></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-success2"class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-success2" class="btn request">인증요청</a></li>
+            </ul>
+            <div class="add-list">
+              <button class="btn-plus">+</button>
+              <button class="btn-minus">-</button>
+            </div>
+          </div>
+
+          <h3>외국어/자격증</h3>
+          <div class="inner info-2 js-change-wrap">
+            <div class="js-change">
+              <ul class="info-list default-list">
+                <li class="license">
+                  <select class="list-change">
+                    <option value="default-list">자격증/면허증</option>
+                    <option value="lang-list">어학시험</option>
+                    <option value="award-list">수상내역/공모전</option>
+                  </select>
+                </li>
+                <li class="license-proof"><input type="text" placeholder="자격증명" value="전자기사 1급"></li>
+                <li class="license-publish"><input type="text" placeholder="발행처/기관" value="한국전자학회"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date" value="2017-02-15"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span id="state-license1" class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" id="btn-license1" class="btn request">인증요청</a></li>
+              </ul>
+              <ul class="info-list lang-list" style="display: none">
+                <li class="lang-test">
+                  <select class="list-change">
+                    <option value="lang-list">어학시험</option>
+                    <option value="default-list">자격증/면허증</option>
+                    <option value="award-list">수상내역/공모전</option>
+                  </select>
+                </li>
+                <li class="lang"><input type="text" placeholder="언어"></li>
+                <li class="license-kind"><input type="text" placeholder="시험종류"></li>
+                <li class="score"><input type="text" placeholder="점수"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" class="btn request">인증요청</a></li>
+              </ul>
+              <ul class="info-list lang-list" style="display: none">
+                <li class="blank"></li>
+                <li class="lang-grade"><input type="text" placeholder="급수"></li>
+                <li class="license-publish"><input type="text" placeholder="발행처/기관"></li>
+              </ul>
+              <ul class="info-list award-list" style="display: none">
+                <li class="license">
+                  <select class="list-change">
+                    <option value="award-list">수상내역/공모전</option>
+                    <option value="lang-list">어학시험</option>
+                    <option value="default-list">자격증/면허증</option>
+                  </select>
+                </li>
+                <li class="license-proof"><input type="text" placeholder="수상명"></li>
+                <li class="license-publish"><input type="text" placeholder="수여기관"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" class="btn request">인증요청</a></li>
+              </ul>
+            </div>
+
+            <div class="js-change">
+              <ul class="info-list default-list" style="display: none">
+                <li class="license">
+                  <select class="list-change">
+                    <option value="default-list">자격증/면허증</option>
+                    <option value="lang-list" selected>어학시험</option>
+                    <option value="award-list">수상내역/공모전</option>
+                  </select>
+                </li>
+                <li class="license-proof"><input type="text" placeholder="자격증명"></li>
+                <li class="license-publish"><input type="text" placeholder="발행처/기관"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" class="btn request">인증요청</a></li>
+              </ul>
+              <ul class="info-list lang-list">
+                <li class="lang-test">
+                  <select class="list-change">
+                    <option value="lang-list">어학시험</option>
+                    <option value="default-list">자격증/면허증</option>
+                    <option value="award-list">수상내역/공모전</option>
+                  </select>
+                </li>
+                <li class="lang"><input type="text" placeholder="언어" value="영어"></li>
+                <li class="license-kind"><input type="text" placeholder="시험종류" value="TOEFL"></li>
+                <li class="score"><input type="text" placeholder="점수" value="900"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date" value="1994-02-15"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span id="state-license2" class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" id="btn-license2" class="btn request">인증요청</a></li>
+              </ul>
+              <ul class="info-list lang-list">
+                <li class="blank"></li>
+                <li class="lang-grade"><input type="text" placeholder="급수" value="-"></li>
+                <li class="license-publish"><input type="text" placeholder="발행처/기관" value="ETS"></li>
+              </ul>
+              <ul class="info-list award-list" style="display: none">
+                <li class="license">
+                  <select class="list-change">
+                    <option value="award-list">수상내역/공모전</option>
+                    <option value="lang-list">어학시험</option>
+                    <option value="default-list">자격증/면허증</option>
+                  </select>
+                </li>
+                <li class="license-proof"><input type="text" placeholder="수상명"></li>
+                <li class="license-publish"><input type="text" placeholder="수여기관"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" class="btn request">인증요청</a></li>
+              </ul>
+            </div>
+
+            <div class="js-change">
+              <ul class="info-list default-list" style="display: none">
+                <li class="license">
+                  <select class="list-change">
+                    <option value="default-list">자격증/면허증</option>
+                    <option value="lang-list" selected>어학시험</option>
+                    <option value="award-list">수상내역/공모전</option>
+                  </select>
+                </li>
+                <li class="license-proof"><input type="text" placeholder="자격증명"></li>
+                <li class="license-publish"><input type="text" placeholder="발행처/기관"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" class="btn request">인증요청</a></li>
+              </ul>
+              <ul class="info-list lang-list" style="display: none">
+                <li class="lang-test">
+                  <select class="list-change">
+                    <option value="lang-list">어학시험</option>
+                    <option value="default-list">자격증/면허증</option>
+                    <option value="award-list">수상내역/공모전</option>
+                  </select>
+                </li>
+                <li class="lang"><input type="text" placeholder="언어"></li>
+                <li class="license-kind"><input type="text" placeholder="시험종류"></li>
+                <li class="score"><input type="text" placeholder="점수"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" class="btn request">인증요청</a></li>
+              </ul>
+              <ul class="info-list lang-list" style="display: none">
+                <li class="blank"></li>
+                <li class="lang-grade"><input type="text" placeholder="급수"></li>
+                <li class="license-publish"><input type="text" placeholder="발행처/기관"></li>
+              </ul>
+              <ul class="info-list award-list">
+                <li class="license">
+                  <select class="list-change">
+                    <option value="award-list">수상내역/공모전</option>
+                    <option value="lang-list">어학시험</option>
+                    <option value="default-list">자격증/면허증</option>
+                  </select>
+                </li>
+                <li class="license-proof"><input type="text" placeholder="수상명" value="2015년 고용패널조사 학술대회 논문 공고"></li>
+                <li class="license-publish"><input type="text" placeholder="수여기관" value="한국고용정보원"></li>
+                <li class="get-date"><span class="label">취득일</span><input type="date" value="2010-02-15"></li>
+                <li class="file">
+                  <input type="file" id="file-search"><label for="file-search">찾기</label>
+                  <button type="button" class="btn-save">저장</button>
+                </li>
+                <li class="progress"><span id="state-license3" class="btn wait">인증대기</span></li>
+                <li class="certifi"><a href="#url" id="btn-license3" class="btn request">인증요청</a></li>
+              </ul>
+            </div>
+            
+            <div class="add-list">
+              <button class="btn-plus">+</button>
+              <button class="btn-minus">-</button>
+            </div>
+          </div>
+
+          <h3>경력</h3>
+          <div class="inner info-3">
+            <ul class="info-list">
+              <li class="company"><input type="text" placeholder="회사/기관명" value="청년테크"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="company-part"><input type="text" placeholder="근무부서" value="기획실"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="company-join"><span class="label">입사년월</span><input type="date" value="2010-01-03"></li>
+              <li class="company-out"><span class="label">퇴사년월</span><input type="date" value="2015-12-31"></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-career1" class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-career1" class="btn request">인증요청</a></li>
+            </ul>
+
+            <ul class="info-list">
+              <li class="company"><input type="text" placeholder="회사/기관명" value="희망스쿨"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="company-part"><input type="text" placeholder="근무부서" value="기획실"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="company-join"><span class="label">입사년월</span><input type="date" value="2016-01-02"></li>
+              <li class="company-out"><span class="label">퇴사년월</span><input type="date" value="2017-06-30"></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-career2" class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-career2" class="btn request">인증요청</a></li>
+            </ul>
+
+            <ul class="info-list">
+              <li class="company"><input type="text" placeholder="회사/기관명" value="나눔기획"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="company-part"><input type="text" placeholder="근무부서" value="기획실"><span class="search-clear">입력내용 지우기</span></li>
+              <li class="company-join"><span class="label">입사년월</span><input type="date" value="2017-07-01"></li>
+              <li class="company-out"><span class="label">퇴사년월</span><input type="date"></li>
+              <li class="file">
+                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <button type="button" class="btn-save">저장</button>
+              </li>
+              <li class="progress"><span id="state-career3" class="btn wait">인증대기</span></li>
+              <li class="certifi"><a href="#url" id="btn-career3" class="btn request">인증요청</a></li>
+            </ul>
+            <div class="add-list">
+              <button class="btn-plus">+</button>
+              <button class="btn-minus">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <a href="#url">저장하기</a>
+          <a href="#url">통합인증하기</a>
+        </div>
+
+        <!-- 인증요청 progress -->
+        <div id="dialog" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="progressbar" class="pgb"></div>
+        </div>
+
+        <div id="dialog2" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="progressbar2" class="pgb"></div>
+        </div>
+
+        <div id="dialog3" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="progressbar3" class="pgb"></div>
+        </div>
+
+        <div id="dialog4" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="progressbar4" class="pgb"></div>
+        </div>
+
+        <div id="dialog5" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="progressbar5" class="pgb"></div>
+        </div>
+
+        <div id="dialog6" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="progressbar6" class="pgb"></div>
+        </div>
+
+        <div id="license1" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="license-bar1" class="pgb"></div>
+        </div>
+
+        <div id="license2" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="license-bar2" class="pgb"></div>
+        </div>
+
+        <div id="license3" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="license-bar3" class="pgb"></div>
+        </div>
+        
+        <div id="license4" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="license-bar4" class="pgb"></div>
+        </div>
+
+        <div id="career1" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="career-bar1" class="pgb"></div>
+        </div>
+        
+        <div id="career2" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="career-bar2" class="pgb"></div>
+        </div>
+        
+        <div id="career3" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="career-bar3" class="pgb"></div>
+        </div>
+
+        <div id="career4" title="인증요청">
+          <div class="progress-label">인증시작..</div>
+          <div id="career-bar4" class="pgb"></div>
+        </div>
+
+        <div id="bc1" title="인증요청">
+          <div class="progress-label2">BC Storage Connecting</div>
+          <div id="bc-bar1" class="pgb"></div>
+        </div>
+
+        <div id="bc2" title="인증요청">
+          <div class="progress-label2">BC Storage Connecting</div>
+          <div id="bc-bar2" class="pgb"></div>
+        </div>
+
+        <div id="bc3" title="인증요청">
+          <div class="progress-label2">BC Storage Connecting</div>
+          <div id="bc-bar3" class="pgb"></div>
+        </div>
+
+        <div id="bc4" title="인증요청">
+          <div class="progress-label2">BC Storage Connecting</div>
+          <div id="bc-bar4" class="pgb"></div>
+        </div>
+        
+
+      </div>
+      <a href="#url" id="btn-bc1" class="hide">hide</a>
+      <a href="#url" id="btn-bc2" class="hide">hide</a>
+      <a href="#url" id="btn-bc3" class="hide">hide</a>
+      <a href="#url" id="btn-bc4" class="hide">hide</a>
+    </div>
+
+    <div id="footer">
+      <div class="footer_area">
+        <ul>
+          <li><a href="">공지사항/알림</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">개인정보 처리방침</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      
+        <address>Copyright © 2018 ALL RIGHT RESERVED</address>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
