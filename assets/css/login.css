@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+.login-wrap {
+  position: relative;
+  height: 850px;
+  background: url(../images/bg-login.jpg) no-repeat 0 0 /cover;
+}
+.login-wrap .login-box {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  padding: 28px 37px 24px;
+  background: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+.login-wrap .login-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 50%;
+  height: 5px;
+  background: #e31837;
+}
+.login-wrap .login-box::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -5px;
+  width: 50%;
+  height: 5px;
+  background: #f58025;
+}
+.login-box .inner {width:1200px;margin:0 auto;}
+.login-box .user-login {
+  position: relative;
+  float:left;
+}
+.login-box .user-login::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.user-login .input-wrap .input-user {
+  width: 190px;
+  height: 33px;
+  padding: 0 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #ccc;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.user-login .input-wrap .input-user:first-child {
+  margin: 0 6px;
+}
+.user-login .btn-login {
+  width: 150px;
+  height: 32px;
+  background: #a87161;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 32px;
+  display: inline-block;
+}
+.login-box .lost-wrap {
+  margin-top: 11px;
+  text-align: right;
+}
+.login-box .lost-wrap a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login-box .login-sns {
+ float:left;
+ margin-left:62px;
+ font-size:0;
+}
+
+.login-box .login-sns .btn-sns {
+  position: relative;
+  display:inline-block;
+  height:37px;
+  line-height:37px;
+  padding:0 12px 0 46px;
+  background: #fff;
+  color: #353535;
+  font-size: 12px;
+  font-weight: 700;
+  background-color:#2db400;
+  border-radius: 4px;
+  margin-left:8px;
+  background-image: url(../images/ico-sns.png);
+  background-repeat: no-repeat;
+  background-position:-372px 0;
+  width:186px;
+  color:#fff;
+}
+.login-box .login-sns .btn-sns.ko { width:186px;background-color:#ffec00;background-position:-186px 0;color:#000000;}
+.login-box .login-sns .btn-sns.fb {background-color:#265998;background-position: 0 0;}
+
+
+.login-box .login-notice {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+}
+.experixnce img,
+.footer img {
+  width: 100%;
+}
+.gate a {font-size:17px !important; color:#e86500 !important}
