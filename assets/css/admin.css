@@ -1,4 +1,27 @@
 @charset "utf-8";
-/* ==================
-only admin
-===================== */
+.tab-list{overflow:hidden;margin-top:48px}
+.tab-list li{float:left;border:1px solid #ddd;border-left:0}
+.tab-list li:first-child{border-left:1px solid #ddd}
+.tab-list li > a{display:block;padding:0 50.9px;height:50px;line-height:50px;font-size:16px;font-weight:700;color:#353535}
+.tab-list li.on{background:#202020}
+.tab-list li.on a{color:#fff}
+.tab-list li:hover{background:#202020}
+.tab-list li:hover a{color:#fff}
+.tab-wrap{margin-top:37px}
+.tab-content .cerfi-tbl{width:100%;border-collapse:collapse}
+.tab-content .cerfi-tbl thead{border-top:1px solid #ddd}
+.tab-content .cerfi-tbl thead tr th{font-size:16px;font-weight:700;color:#353535;text-align:center;background:#f8f8f8;padding:15px 0}
+.tab-content .cerfi-tbl tbody{border-top:1px solid #ddd}
+.tab-content .cerfi-tbl tbody tr td{padding:18px 0 15px;border:1px solid #ddd;text-align:center;font-size:14px;font-weight:700;color:#707070}
+.tab-content .cerfi-tbl tbody tr td:first-child{border-left:0}
+.tab-content .cerfi-tbl tbody tr td:last-child{border-right:0}
+.page-navi{position:relative;left:50%;display:inline-block;overflow:hidden;margin-top:59px;transform:translateX(-50%)}
+.page-navi > li{float:left}
+.page-navi > li > a{display:inline-block;width:32px;height:42px;line-height:42px;text-align:center;font-size:14px;font-weight:700;color:#706f6f}
+.page-navi > li.on > a{text-decoration:underline;color:#e31837}
+.page-navi > li .arr{width:42px;height:42px;font-size:0;text-indent:-9999px;background:url('../images/ico-navi.png') no-repeat 0 0}
+.page-navi > li.prev{margin-left:4px;margin-right:20px}
+.page-navi > li.prev > a{background-position:-42px}
+.page-navi > li.next{margin-right:4px;margin-left:20px}
+.page-navi > li.next > a{background-position:-84px}
+.page-navi > li.end > a{background-position:-126px}
