@@ -41,3 +41,7 @@
 .main-keyvisual .uni dl dd:nth-child(3) {margin:0 18px;background:url(../images/uni_dd_02.png) 50% 68px  no-repeat;}
 .main-keyvisual .uni dl dd:nth-child(4) {background:url(../images/uni_dd_03.png) 50% 68px  no-repeat;}
 .main-keyvisual .uni dl dt::before, .main-keyvisual .uni dl dd::before {content:'';clear:both;display:inline-block;width:14px;height:14px;background:#fff;position:absolute;top:279px;left:50%;margin-left:-7px;}
+
+/* button */
+.btn {display:inline-block;margin-top:24px;}
+.btn.more {border:1px solid  #fff;padding:0 40px;height:45px;line-height:45px;}

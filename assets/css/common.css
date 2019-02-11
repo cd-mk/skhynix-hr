@@ -105,13 +105,12 @@ common
 ===================== */
 
 /* button */
-.btn {display:inline-block;margin-top:24px;}
-.btn.more {border:1px solid  #fff;padding:0 40px;height:45px;line-height:45px;}
+
 
 /* input */
 input::-moz-focus-inner{border:0;padding:0}
 input, select, textarea{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none}
-input, select{height:43px;border:1px solid #ddd;box-sizing:border-box;padding:0 12px;vertical-align:middle}
+input, select{height:43px;border:1px solid #ddd;box-sizing:border-box;padding:0 12px;vertical-align:middle !important;}
 select{width:100%;height:43px;padding:13px 13px 12px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #ddd;border-radius:0;box-sizing:border-box;cursor:pointer;color:#707070;background:#fff url('../images/ico-arr-down.png') no-repeat 95% 50%}
 input::placeholder{font-size:16px;font-weight:700;color:#707070}
 input:disabled{color:#8b8787 !important;background:#d2d2d2}
@@ -140,7 +139,7 @@ input[type="file"] + label{display:inline-block;width:48px;height:31px;backgroun
 #header .lnb li:last-child::before{content:'';clear:both;display:inline-block;width:2px;height:14px;background:#a7a5a5;margin:0 12px}
 .wrap{padding-bottom:80px;position:relative}
 #container{background-color:#f8f8f8;padding-top:25px;padding-bottom:55px}
-#container .contents{max-width:1240px;margin:0 auto;background:#fff;border:1px solid #dddddd;min-height:500px;height:100%;padding:40px;box-sizing:border-box}
+#container .contents{max-width:1240px;margin:0 auto;background:#fff;border:1px solid #dddddd;min-height:500px;height:100%;padding:40px;box-sizing:border-box;overflow: hidden;}
 #container .contents h2{font-size:38px;font-weight:700;color:#353535;margin-bottom:20px;font-family: 'Moebius';}
 #container .contents h3{font-size:24px;font-weight:700;color:#353535;font-family: 'Moebius';}
 .keyvisual{height:190px;background:url('../images/sub_bg.jpg') no-repeat 0 0 / cover;color:#fff;padding-top:55px}
