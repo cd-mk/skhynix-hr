@@ -152,7 +152,6 @@ $(function() {
       addList.find('.certifi a').css('opacity', 0);
       $(this).closest('.add-list').before(addList);
 
-      // plus 버튼 클릭 시 popup 이벤트 트리거
       popup6();
       license4();
       career4();
