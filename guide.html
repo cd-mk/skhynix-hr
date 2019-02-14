@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>퍼블리싱 가이드</title>
+
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/guide.css">
+</head>
+<body>
+    <style>
+        h1 {font-size: 40px; color: #000; font-weight: bold; text-align: center;}
+        .guide-desc {font-size: 18px; color: #000; margin-top: 20px;}
+        h1 + .guide-desc {text-align: center;}
+        #wrap {width: 1240px; margin: 0 auto; padding: 30px 0;}
+        .guide-section {margin-top: 20px; border: 1px solid #000; box-sizing: border-box; padding: 20px;}
+        .guide-section h2 {font-size: 24px; color: #000; font-weight: bold; margin: 10px 0;}
+        .guide-section h3 {font-size: 19px; color: #e31837; font-weight: bold; margin-top: 20px;}
+        .section-desc {font-size: 16px; color: #000; margin-top: 10px; line-height: 1.6;}
+        .case-item > p {font-size: 14px; color: #000; margin-top: 8px;}
+    </style>
+    <div id="wrap">
+        <h1>Style Guide</h1>
+        <p class="guide-desc">
+            복붙해서 씁시다 개발자 도구를 켜세요
+        </p>
+        <div class="guide-section">
+            <h2>Color Guide</h2>
+            <p class="section-desc">
+                bg-color : point-black, point-gray, point-red, point-green, point-orange, point-brown
+            </p>
+            <div class="case-item">
+                <span style="width: 100px; height: 50px" class="point-black"></span>
+                <span style="width: 100px; height: 50px" class="point-gray"></span>
+                <span style="width: 100px; height: 50px" class="point-red"></span>
+                <span style="width: 100px; height: 50px" class="point-green"></span>
+                <span style="width: 100px; height: 50px" class="point-orange"></span>
+                <span style="width: 100px; height: 50px" class="point-brown"></span>
+            </div>
+        </div>
+        <div class="guide-section">
+            <h2>BUTTON Style</h2>
+            <p class="section-desc">
+                align : left(default), center, right
+            </p>
+            <div class="case-item">
+                <h3>1. Single Button</h3>
+                <div class="btn-wrap">
+                    <a href="#url" class="btn point-black">
+                        <span>목록</span>
+                    </a>
+                </div>
+            </div>
+            <div class="case-item">
+                <h3>2. n Button</h3>
+                <div class="btn-wrap">
+                    <a href="#url" class="btn point-black">
+                        <span>입사지원하기</span>
+                    </a>
+                    <a href="#url" class="btn point-black">
+                        <span>목록</span>
+                    </a>
+                </div>
+                <div class="btn-wrap align-center">
+                    <a href="#url" class="btn point-black">
+                        <span>입사지원하기</span>
+                    </a>
+                    <a href="#url" class="btn point-black">
+                        <span>목록</span>
+                    </a>
+                    <a href="#url" class="btn point-black">
+                        <span>돌아가기</span>
+                    </a>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#url" class="btn point-black">
+                        <span>입사지원하기</span>
+                    </a>
+                    <a href="#url" class="btn point-black align-right">
+                        <span>목록</span>
+                    </a>
+                    <a href="#url" class="btn point-black align-right">
+                        <span>돌아가기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="case-item">
+                <h3>3. State Button</h3>
+                <p>
+                    Table 내에서 사용되는 버튼 및 상태 표시 버튼
+                </p>
+
+                <div>
+                    <span class="btn-state point-brown">인증대기</span>
+                    <span class="btn-state point-red">인증불가</span>
+                    <span class="btn-state point-red">인증실패</span>
+                    <span class="btn-state point-green">인증진행</span>
+                    <span class="btn-state point-orange">인증성공</span>
+                    <button type="button" class="btn-request point-gray">인증요청</button>
+                    <button type="button" class="btn-request point-black">재인증</button>
+                </div>
+            </div>
+            <div class="case-item">
+                <h3>4. State Button Type2</h3>
+                <p>
+                    Table 내에서 사용되는 상태 표시 버튼
+                </p>
+
+                <div>
+                    <span class="state-text point-orange">서류접수중</span>
+                    <span class="state-text point-red">전형진행중</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-section">
+            <h2>INPUT Style</h2>
+            <div class="case-item">
+                <h3>1. Type Text</h3>
+                <p>
+                    size : input-small, input-medium, input-large, input-full<br>
+                    닫기버튼 요소 추가
+                </p>
+                <div class="input-box">
+                    <label for="ipt1" class="blind">입력</label>
+                    <input type="text" id="ipt1" class="input-small">
+                    <span class="input-clear">입력내용 지우기</span>
+                </div>
+                <div class="input-box">
+                    <label for="ipt2" class="blind">입력</label>
+                    <input type="text" id="ipt2" class="input-medium">
+                    <span class="input-clear">입력내용 지우기</span>
+                </div>
+                <div class="input-box">
+                    <label for="ipt3" class="blind">입력</label>
+                    <input type="text" id="ipt3" class="input-large">
+                    <span class="input-clear">입력내용 지우기</span>
+                </div>
+                <div class="input-box">
+                    <label for="ipt4" class="blind">입력</label>
+                    <input type="text" id="ipt4" class="input-full">
+                    <span class="input-clear">입력내용 지우기</span>
+                </div>
+                <p>
+                    테이블 내 꽉찬 input 사용시 input-full & type2 클래스 추가
+                </p>
+                <div class="input-box" style="border: 1px solid #000">
+                    <label for="ipt5" class="blind">입력</label>
+                    <input type="text" id="ipt5" class="input-full type2">
+                    <span class="input-clear">입력내용 지우기</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/new-common.js"></script>
+</body>
+</html>
