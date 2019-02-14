@@ -7,6 +7,8 @@
     <title>퍼블리싱 가이드</title>
 
     <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/pretty-input.css ">
     <link rel="stylesheet" href="./assets/css/guide.css">
 </head>
 <body>
@@ -89,7 +91,7 @@
             <div class="case-item">
                 <h3>3. State Button</h3>
                 <p>
-                    Table 내에서 사용되는 버튼 및 상태 표시 버튼
+                    Table 내에서 사용되는 상태 표시 텍스트
                 </p>
 
                 <div>
@@ -98,6 +100,11 @@
                     <span class="btn-state point-red">인증실패</span>
                     <span class="btn-state point-green">인증진행</span>
                     <span class="btn-state point-orange">인증성공</span>
+                </div>
+                <p>
+                    Table 내에서 사용되는 버튼
+                </p>
+                <div>
                     <button type="button" class="btn-request point-gray">인증요청</button>
                     <button type="button" class="btn-request point-black">재인증</button>
                 </div>
@@ -105,7 +112,7 @@
             <div class="case-item">
                 <h3>4. State Button Type2</h3>
                 <p>
-                    Table 내에서 사용되는 상태 표시 버튼
+                    Table 내에서 사용되는 상태 표시 텍스트
                 </p>
 
                 <div>
@@ -152,9 +159,73 @@
                     <span class="input-clear">입력내용 지우기</span>
                 </div>
             </div>
+            <div class="case-item">
+                <h3>2. Type Checkbox</h3>
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox">
+                    <div class="state">
+                        <label>동의</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox">
+                    <div class="state">
+                        <label>보감</label>
+                    </div>
+                </div>
+            </div>
+            <div class="case-item">
+                <h3>3. Type Radio</h3>
+                <div class="pretty p-default p-fill">
+                    <input type="radio" name="nation">
+                    <div class="state">
+                        <label>한국</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-fill">
+                    <input type="radio" name="nation">
+                    <div class="state">
+                        <label>미국</label>
+                    </div>
+                </div>
+            </div>
+            <div class="case-item">
+                <h3>4. Select</h3>
+                <div>
+                    <select>
+                        <option value="">옵션1</option>
+                        <option value="">옵션2</option>
+                        <option value="">옵션3</option>
+                        <option value="">옵션4</option>
+                        <option value="">옵션5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="case-item">
+                <h3>5. Type Date</h3>
+                <div>
+                    <span>
+                        <label for="date1">입사년월</label>
+                        <input type="text" class="input-date" id="date1">
+                    </span>
+                    <span>
+                        <label for="date2">퇴사년월</label>
+                        <input type="text" class="input-date" id="date2">
+                    </span>
+                </div>
+                <div>
+                    <p>테이블 내 꽉찬 input 사용사 type2 추가</p>
+
+                    <span style="border: 1px solid #000">
+                        <label for="date3" class="blind">퇴사년월</label>
+                        <input type="text" class="input-date type2" id="date3">
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/new-common.js"></script>
 </body>
 </html>
