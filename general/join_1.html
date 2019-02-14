@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SK하이닉 HR - 회원가입/Step1</title>
   <link rel="stylesheet" href="../assets/css/common.css">
-  <link rel="stylesheet" href="../assets/css/default.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../assets/css/pretty-input.css ">
+  <link rel="stylesheet" href="../assets/css/guide.css">
 </head>
 
 <body>
   <div class="wrap">
-    <div id="header">
-    </div>
     <div id="container">
         <div class="join_step1">
             <h2>청년희망나눔</h2>
@@ -22,18 +22,18 @@
             <div>
               <h3>지원자 확인</h3>
               <ul>
-                <li>
+                <li class="input-box">
                   <span>*</span>
                   <label for="ipt1">이름(실명)</label>
-                  <input type="text" id="ipt1">
+                  <input type="text" id="ipt1" class="input-medium">
                 </li>
-                <li>
+                <li class="input-box">
                   <span>*</span>
                   <label for="ipt2">이메일</label>
                   <input type="text" id="ipt2">
                   <a href="#a">인증번호 받기</a>
                 </li>
-                <li>
+                <li class="input-box">
                   <span>*</span>
                   <label for="ipt3">이메일인증번호</label>
                   <input type="text" id="ipt3">                
@@ -77,16 +77,16 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <button type="button">다음</button>
-              <button type="button">취소</button>
-            </div>
+            <div class="btn-wrap align-center">
+              <a href="join_2.html" class="btn point-black">
+                  <span>다음</span>
+              </a>
+              <a href="index.html" class="btn point-black">
+                  <span>취소</span>
+              </a>
+          </div>
         </div>
     </div>
-    <!-- S: FOOTER AREA -->
-    <div id="footer">
-    </div>
-    <!-- E: FOOTER AREA -->
 
   </div>
 </body>
