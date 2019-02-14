@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SK하이닉 HR -채용정보</title>
+  <title>SK하이닉 HR - 회원가입/Step1</title>
   <link rel="stylesheet" href="../assets/css/common.css">
   <link rel="stylesheet" href="../assets/css/default.css">
 </head>
@@ -15,7 +15,7 @@
     <div id="header">
     </div>
     <div id="container">
-        <div class="join">
+        <div class="join_step1">
             <h2>청년희망나눔</h2>
             <div>회원 가입을 환영합니다.</div>
             <span>청년희망나눔지원 시 작성한 이메일 주소로 본인인증을 진행 합니다. 아래 정보를 정확히 입력해 주세요.</span>
@@ -24,21 +24,21 @@
               <ul>
                 <li>
                   <span>*</span>
-                  <label for="name">이름(실명)</label>
-                  <input type="text" id="name">
+                  <label for="ipt1">이름(실명)</label>
+                  <input type="text" id="ipt1">
                 </li>
                 <li>
                   <span>*</span>
-                  <label for="email">이메일</label>
-                  <input type="text" id="email">
+                  <label for="ipt2">이메일</label>
+                  <input type="text" id="ipt2">
                   <a href="#a">인증번호 받기</a>
                 </li>
                 <li>
                   <span>*</span>
-                  <label for="number">이메일인증번호</label>
-                  <input type="text" id="number">
-                  <a href="#a">확인</a>
-                  <a href="#a">재발송</a>
+                  <label for="ipt3">이메일인증번호</label>
+                  <input type="text" id="ipt3">                
+                  <button type="button">확인</button>
+                  <button type="button">재발송</button>
                 </li>
               </ul>
             </div>
@@ -46,12 +46,12 @@
               <h3>약관 및 개인정보 수집 및 이용 동의</h3>
               <ul>
                 <li>
-                  <input type="checkbox" id="check1"> 
-                  <label for="check1">전체동의</label>
+                  <input type="checkbox" id="ipt4"> 
+                  <label for="ipt4">전체동의</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="check2">
-                  <label for="check2">이용약관 동의</label>
+                  <input type="checkbox" id="ipt5">
+                  <label for="ipt5">이용약관 동의</label>
                   <span>(필수)</span>
                   <div>
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
@@ -59,26 +59,28 @@
                   </div>
                 </li>
                 <li>
-                  <input type="checkbox" id="check3">
-                  <label for="check3">개인정보 수집 및 이용 동의</label>
+                  <input type="checkbox" id="ipt6">
+                  <label for="ipt6">개인정보 수집 및 이용 동의</label>
                   <span>(필수)</span>
                   <div>
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                   </div>
+                </li>        
+                <li>
+                  <input type="checkbox" id="ipt7">
+                  <label for="ipt7">마케팅 정보 이메일 수신 동의 (선택)</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="check4">
-                  <label for="check4">마케팅 정보 이메일 수신 동의 (선택)</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="check5">
-                  <label for="check5">마케팅 정보 SMS 수신 동의 (선택)</label>
+                  <input type="checkbox" id="ipt8">
+                  <label for="ipt8">마케팅 정보 SMS 수신 동의 (선택)</label>
                 </li>
               </ul>
             </div>
-            <a href="#a">다음</a>
-            <a href="#a">취소</a>
+            <div>
+              <button type="button">다음</button>
+              <button type="button">취소</button>
+            </div>
         </div>
     </div>
     <!-- S: FOOTER AREA -->
