@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* common */
+.blind{ 
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    width:1px;
+    height:1px;
+    font-size:0;
+    line-height:0
+}
+
+/* color */
+.point-black {
+    background: #202020;
+}
+.point-gray {
+    background: #4f4f4f;
+}
+.point-red {
+    background: #e31837;
+}
+.point-brown {
+    background: #5b3d0f;
+}
+.point-orange {
+    background: #f58025;
+}
+.point-green {
+    background: #288116;
+}
+
+/* button style */
+.btn-wrap {
+    overflow: hidden;
+}
+.btn-wrap::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.btn-wrap .btn {
+    float: left;
+    margin-left: 15px;
+    padding: 0 30px;
+}
+.btn-wrap .btn:first-child {
+    margin-left: 0;
+}
+.btn-wrap .btn > span {
+    height: 43px;
+    line-height: 43px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-wrap .btn.point-black {
+    background: #202020;
+}
+.btn-wrap.align-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+.btn-wrap .btn.align-right {
+    float: right;
+}
+.btn-wrap .btn.align-right:first-child {
+    margin-left: 0;
+}
+.btn-state {
+    display: inline-block;
+    width: 77px;
+    height: 31px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 31px;
+}
+.btn-request {
+    display: inline-block;
+    width: 77px;
+    height: 31px;
+    padding: 0;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 31px;
+    cursor: pointer;
+}
+.state-text {
+    display: inline-block;
+    width: 99px;
+    height: 29px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* input style */
+/* type text */
+.input-box {
+    position: relative;
+    display: inline-block;
+}
+input[type="text"] {
+    height: 43px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 0 12px;
+    vertical-align: middle;
+}
+input[type=text]:-ms-clear{
+    display: none;
+}
+input[type="text"].input-small {
+    width: 108px;
+}
+input[type="text"].input-medium {
+    width: 272px;
+}
+input[type="text"].input-large {
+    width: 577px;
+}
+input[type="text"].input-full {
+    width: 100%;
+}
+input[type="text"].input-full.type2 {
+    border: 0;
+}
+.input-clear {
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px;
+    height: 11px;
+    background: url(../images/ico-close.png) no-repeat 0 0;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+.input-clear.vaild {
+    display: block;
+}
