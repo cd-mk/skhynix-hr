@@ -22,21 +22,30 @@
             <div>
               <h3>지원자 확인</h3>
               <ul>
-                <li class="input-box">
+                <li>
                   <span>*</span>
                   <label for="ipt1">이름(실명)</label>
-                  <input type="text" id="ipt1" class="input-medium">
+                  <div class="input-box">                    
+                    <input type="text" id="ipt1" class="input-medium">
+                    <span class="input-clear">입력내용 지우기</span>
+                  </div>
                 </li>
-                <li class="input-box">
+                <li>
                   <span>*</span>
                   <label for="ipt2">이메일</label>
-                  <input type="text" id="ipt2">
-                  <a href="#a">인증번호 받기</a>
+                  <div class="input-box">
+                    <input type="text" id="ipt2" class="input-medium">
+                    <span class="input-clear">입력내용 지우기</span>
+                  </div>
+                  <button type="button">인증번호 받기</button>                  
                 </li>
-                <li class="input-box">
+                <li>
                   <span>*</span>
                   <label for="ipt3">이메일인증번호</label>
-                  <input type="text" id="ipt3">                
+                  <div class="input-box">
+                    <input type="text" id="ipt3" class="input-medium">
+                    <span class="input-clear">입력내용 지우기</span>
+                  </div>
                   <button type="button">확인</button>
                   <button type="button">재발송</button>
                 </li>
@@ -45,35 +54,45 @@
             <div>
               <h3>약관 및 개인정보 수집 및 이용 동의</h3>
               <ul>
-                <li>
-                  <input type="checkbox" id="ipt4"> 
-                  <label for="ipt4">전체동의</label>
+                <li class="pretty p-default p-fill">
+                  <input type="checkbox"> 
+                  <div class="state">
+                    <label>전체동의</label>
+                  </div>
                 </li>
-                <li>
-                  <input type="checkbox" id="ipt5">
-                  <label for="ipt5">이용약관 동의</label>
-                  <span>(필수)</span>
+                <li class="pretty p-default p-fill">
+                  <input type="checkbox">
+                  <div class="state">
+                    <label>이용약관 동의</label>
+                    <span>(필수)</span>
+                  </div>                
                   <div>
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                   </div>
                 </li>
-                <li>
-                  <input type="checkbox" id="ipt6">
-                  <label for="ipt6">개인정보 수집 및 이용 동의</label>
-                  <span>(필수)</span>
+                <li class="pretty p-default p-fill">
+                  <input type="checkbox">
+                  <div class="state">
+                    <label>개인정보 수집 및 이용 동의</label>
+                    <span>(필수)</span>
+                  </div>                  
                   <div>
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                   </div>
                 </li>        
-                <li>
-                  <input type="checkbox" id="ipt7">
-                  <label for="ipt7">마케팅 정보 이메일 수신 동의 (선택)</label>
+                <li class="pretty p-default p-fill">
+                  <input type="checkbox">
+                  <div class="state">
+                    <label>마케팅 정보 이메일 수신 동의 (선택)</label>
+                  </div>
                 </li>
-                <li>
-                  <input type="checkbox" id="ipt8">
-                  <label for="ipt8">마케팅 정보 SMS 수신 동의 (선택)</label>
+                <li class="pretty p-default p-fill">
+                  <input type="checkbox">
+                  <div class="state">
+                    <label>마케팅 정보 SMS 수신 동의 (선택)</label>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -87,8 +106,10 @@
           </div>
         </div>
     </div>
-
   </div>
+  <script src="../assets/js/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
+  <script src="../assets/js/new-common.js"></script>
 </body>
 
 </html>

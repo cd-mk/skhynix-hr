@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SK하이닉 HR - 회원가입/Step3</title>
   <link rel="stylesheet" href="../assets/css/common.css">
-  <link rel="stylesheet" href="../assets/css/default.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../assets/css/pretty-input.css ">
+  <link rel="stylesheet" href="../assets/css/guide.css">
 </head>
 
 <body>
   <div class="wrap">
-    <div id="header">
-    </div>
     <div id="container">
         <div class="join_step3">
             <h2>청년희망나눔</h2>
@@ -31,48 +31,107 @@
                         <td> youmikang@naver.com</td>
                     </tr>
                     <tr>
-                        <th><span>*</span><label for="ipt9">비밀번호</label></th>
-                        <td><input type="password" id="ipt9" placeholder="(6~16자의 영문,숫자,특수기호)"></td>
+                        <th>
+                            <span>*</span>
+                            <label for="ipt9">비밀번호</label>
+                        </th>
+                        <td class="input-box">
+                            <input type="password" id="ipt9" class="input-large" placeholder="(6~16자의 영문,숫자,특수기호)">
+                            <span class="input-clear">입력내용 지우기</span>
+                        </td>
                     </tr>
                     <tr>
-                        <th><span>*</span><label for="ipt10">비밀번호 확인</label></th>
-                        <td><input type="password" id="ipt10" placeholder="(6~16자의 영문,숫자,특수기호)"></td>
+                        <th>
+                            <span>*</span>
+                            <label for="ipt10">비밀번호 확인</label>
+                        </th>
+                        <td class="input-box">
+                            <input type="password" id="ipt10" class="input-large" placeholder="(6~16자의 영문,숫자,특수기호)">\
+                            <span class="input-clear">입력내용 지우기</span>
+                        </td>
                     </tr>
                     <tr>
-                        <th><span>*</span><label for="ipt11">생년월일</label></th>
-                        <td><input type="text" id="ipt11" placeholder="(주민번호 앞6자리)"><span> - </span><input type="text" title="주민번호 뒷1자리"><span>******</span></td>
+                        <th>
+                            <span>*</span>
+                            <label for="ipt11">생년월일</label>
+                        </th>
+                        <td>
+                            <div class="input-box">
+                                <input type="text" id="ipt11" class="input-small" placeholder="(주민번호 앞6자리)">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </div>
+                            <span> - </span>
+                            <div class="input-box">
+                                <input type="text" class="input-small" title="주민번호 뒷1자리">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </div>
+                            <span>******</span>
+                        </td>
                     </tr>
                     <tr>
-                        <th rowspan="2"><span>*</span><label for="ipt12">휴대폰번호</label></th>
-                        <td><input type="text" id="ipt12"><button type="button">실명 인증 받기</button></td>
+                        <th rowspan="2">
+                            <span>*</span>
+                            <label for="ipt12">휴대폰번호</label>
+                        </th>
+                        <td>
+                            <div class="input-box">
+                                <input type="text" class="input-medium" id="ipt12">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </div>
+                            <button type="button">실명 인증 받기</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" title="인증번호 입력" placeholder="인증번호입력"><button type="button">확인</button><button type="button">재전송</button></td>
+                        <td>
+                            <div class="input-box">
+                                <input type="text" class="input-small" title="인증번호 입력" placeholder="인증번호입력">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </div>
+                            <button type="button">확인</button>
+                            <button type="button">재전송</button>
+                        </td>
                     </tr>
                     <tr>
-                        <th rowspan="3"><span>*</span><label for="ipt13">주소</label></th>
-                        <td><input type="text" id="ipt13"><button type="button">주소검색</button></td>
+                        <th rowspan="3">
+                            <span>*</span>
+                            <label for="ipt13">주소</label>
+                        </th>
+                        <td>
+                            <div class="input-box">
+                                <input type="text" id="ipt13">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </div>
+                            <button type="button">주소검색</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" title="기본주소입력" placeholder="기본주소"></td>
+                        <td class="input-box">
+                            <input type="text" class="input-large" title="기본주소입력" placeholder="기본주소">
+                            <span class="input-clear">입력내용 지우기</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" title="상세주소입력" placeholder="상세주소"></td>
+                        <td class="input-box">
+                            <input type="text" class="input-large" title="상세주소입력" placeholder="상세주소">
+                            <span class="input-clear">입력내용 지우기</span>
+                        </td>
                     </tr> 
                 </tbody>
             </table>
-            <div>
-                <button type="button">가입</button>
-                <button type="button">취소</button>
+            <div class="btn-wrap align-center">
+                <a href="#url" class="btn point-black">
+                    <span>가입</span>
+                </a>
+                <a href="#url" class="btn point-black">
+                    <span>취소</span>
+                </a>
             </div>
         </div>
     </div>
-    <!-- S: FOOTER AREA -->
-    <div id="footer">
     </div>
-    <!-- E: FOOTER AREA -->
-
-  </div>
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/new-common.js"></script>
 </body>
 
 </html>
