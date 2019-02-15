@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="./assets/css/pretty-input.css ">
     <link rel="stylesheet" href="./assets/css/guide.css">
 </head>
 <body>
@@ -161,32 +160,42 @@
             </div>
             <div class="case-item">
                 <h3>2. Type Checkbox</h3>
-                <div class="pretty p-default p-fill">
-                    <input type="checkbox">
-                    <div class="state">
-                        <label>동의</label>
-                    </div>
-                </div>
-                <div class="pretty p-default p-fill">
-                    <input type="checkbox">
-                    <div class="state">
-                        <label>보감</label>
-                    </div>
+                <span class="check-box">
+                    <input type="checkbox" id="chk1">
+                    <label for="chk1">선택1</label>
+                </span>
+                <span class="check-box">
+                    <input type="checkbox" id="chk2">
+                    <label for="chk2">선택2</label>
+                </span>
+                <div>
+                    <p style="color: #000; margin-top: 5px;">label 텍스트가 없는 경우 no-text 클래스 추가</p>
+
+                    <span class="check-box no-text">
+                        <input type="checkbox" id="chk3">
+                        <label for="chk3">선택</label>
+                    </span>
+                    
                 </div>
             </div>
             <div class="case-item">
                 <h3>3. Type Radio</h3>
-                <div class="pretty p-default p-fill">
-                    <input type="radio" name="nation">
-                    <div class="state">
-                        <label>한국</label>
-                    </div>
-                </div>
-                <div class="pretty p-default p-fill">
-                    <input type="radio" name="nation">
-                    <div class="state">
-                        <label>미국</label>
-                    </div>
+                <span class="radio-box">
+                    <input type="radio" id="radio1" name="nation">
+                    <label for="radio1">한국</label>
+                </span>
+                <span class="radio-box">
+                    <input type="radio" id="radio2" name="nation">
+                    <label for="radio2">미국</label>
+                </span>
+                <div>
+                    <p style="color: #000; margin-top: 5px;">label 텍스트가 없는 경우 no-text 클래스 추가</p>
+
+                    <span class="radio-box no-text">
+                        <input type="radio" id="radio3">
+                        <label for="radio3">선택</label>
+                    </span>
+                    
                 </div>
             </div>
             <div class="case-item">

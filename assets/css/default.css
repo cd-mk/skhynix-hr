@@ -65,132 +65,337 @@
 .page-navi > li.end > a{background-position:-126px}
 
 /* 이력관리 - registMgt */
-.personal-basics{background-color:#f8f8f8;border:1px solid#dddddd;color:#707070;padding:25px 40px}
-.personal-basics .inner{position:relative;margin-top:25px;padding-left:155px}
-.personal-basics .photo{position:absolute;top:0;left:0;border:1px solid #dddddd;width:131px;height:164px}
-.personal-basics .photo img{width:100%;height:100%}
-.personal-basics ul{padding-top:9.5px}
-.personal-basics ul li{float:left;width:50%;color:#707070;font-weight:bold;margin-top:10px}
-.personal-basics ul li.address{width:100%}
-.personal-basics ul li:first-child,
-.personal-basics ul li:nth-child(2){margin-top:0}
-.personal-basics ul li:first-child{margin-top:13.5px}
-.personal-basics strong{display:inline-block;width:100px}
-.personal-basics span{position:relative;display:inline-block}
-.personal-basics ul li:first-child strong{width:auto}
-.personal-basics input{color:#707070}
-.personal-basics .input-small{width:108px}
-.personal-basics .input-medium{width:272px}
-.personal-basics .input-large{width:577px}
-.personal-basics .address-1::after{content:'';display:table;clear:both}
-.personal-basics .address-1 input{float:left;border-right:0}
-.personal-basics .address-1 .btn-search-address{width:42px;height:43px;box-sizing:border-box;border:1px solid #ddd;background:#fff url('../images/ico-search.jpg') no-repeat center;text-indent:-9999px;cursor:pointer}
-.personal-basics .address-2{margin-left:2px}
-.personal-info{border-width:0 1px 1px 1px;border-style:solid;border-color:#dddddd;}
-.personal-info h3{font-size:20px;border-top:1px solid #dddddd;padding:0 40px;height:65px;line-height:65px}
-.personal-info h3:first-child{border:0}
-.personal-info h3::before{content:'';clear:both;display:inline-block;margin-right:10px;width:7px;height:7px;background:#585858;border-radius:100%;vertical-align:middle}
-.personal-info .inner{padding:0 30px 25px}
-.personal-info .inner .header{display:table;width:100%;height:43px;line-height:43px;border:1px solid #ddd}
-.personal-info .inner .header li{display:table-cell;padding:0 !important;background-color:#f8f8f8;border-left:1px solid #ddd;border-collapse:collapse;text-align:center;font-weight:700;vertical-align: middle;}
-.personal-info .inner .header li:first-child{border-left:0}
-.personal-info .inner .info-list{display:table;width:100%;border:1px solid #ddd;margin-top:6px}
-.personal-info .inner .info-list li{position:relative;display:table-cell;border-left:1px solid #ddd;border-collapse:collapse}
-.personal-info .inner .info-list li:first-child{border-left:0}
-.personal-info .inner .info-list li input,
-.personal-info .inner .info-list li select{border:0;width:100%}
-.personal-info .inner .info-list li input{color:#707070}
-.personal-info .inner li{box-sizing:border-box}
-.personal-info .inner li.degree{width:66px}
-.personal-info .inner li.School-name{width:155px}
-.personal-info .inner li.department-name{width:134px}
-.personal-info .inner li.department-name input:disabled{background:#fff}
-.personal-info .inner li.entrance-date{width:140px}
-.personal-info .inner li.entrance-date input{width:139px}
-.personal-info .inner li.graduation-date{width:137px}
-.personal-info .inner li.graduation-date input{width:136px}
-.personal-info .inner li.graduated{width:67px}
-.personal-info .inner li.grade{width:89px;padding:0 6px}
-.personal-info .inner li.grade input{width:30px;height:30px;padding:0 2px;border:1px solid #ddd}
-.personal-info .inner li.grade input:disabled{background:#fff;border:0}
-.personal-info .inner li.grade input:disabled + span{opacity:0}
-.personal-info .inner li.file{overflow:hidden;width:117px;padding:0 7px}
-.personal-info .inner li.file .btn-save{position:relative;top:-1px;display:inline-block;width:48px;height:31px;line-height:31px;text-align:center;border:1px solid #ddd;color:#707070;background:#f8f8f8 url('../images/ico-save.jpg') no-repeat center;text-indent:-9999px;cursor:pointer}
-.personal-info .inner li.progress{width:96px;text-align:center}
-.personal-info .inner li.progress .btn{display:inline-block;width:77px;height:31px;color:#fff;font-size:14px;text-align:center;line-height:31px}
-.personal-info .inner li.progress .btn.impossible{background:#e31837}
-.personal-info .inner li.progress .btn.wait{background:#5b3d0f}
-.personal-info .inner li.progress .btn.fail{background:#e31837}
-.personal-info .inner li.progress .btn.success{background:#f58025}
-.personal-info .inner li.progress .btn.ing{background:#288116}
-.personal-info .inner li.certifi{width:97px;text-align:center}
-.personal-info .inner li.certifi .btn{display:inline-block;width:77px;height:31px;color:#fff;font-size:14px;text-align:center;line-height:31px;border-radius:0;border:0;padding:0}
-.personal-info .inner li.certifi .btn.impossible{background:#e31837}
-.personal-info .inner li.certifi .btn.request{background:#4f4f4f}
-.personal-info .inner li.certifi .btn.retry{background:#202020}
-.personal-info .inner li.certifi .btn.ing{background:#ccc;cursor:auto}
-.personal-info .inner.info-2 .info-list{overflow:hidden;display:block;border:0;margin-top:5px}
-.personal-info .inner.info-2 .info-list:first-child{margin-top:0}
-.personal-info .inner.info-2 .info-list li{float:left;margin-left:5px;border:1px solid #ddd}
-.personal-info .inner.info-2 .info-list li:first-child{margin-left:0}
-.personal-info .inner.info-2 li.license{width:138px}
-.personal-info .inner.info-2 li.license-proof{width:124px}
-.personal-info .inner.info-2 li.license-publish{width:228px}
-.personal-info .inner.info-2 li.lang-test{width:100px}
-.personal-info .inner.info-2 li.lang{width:92px}
-.personal-info .inner.info-2 li.license-kind{width:173px}
-.personal-info .inner.info-2 li.score{width:120px}
-.personal-info .inner.info-2 li.blank{width:100px;border-color:transparent}
-.personal-info .inner.info-2 li.lang-grade{width:163px}
-.personal-info .inner.info-2 li.get-date{width:269px;border:0}
-.personal-info .inner.info-2 li.get-date .label{position:relative;top:13px;display:inline-block;margin-left:22px;font-weight:700;color:#707070}
-.personal-info .inner.info-2 li.get-date input{float:right;border:1px solid #ddd;width:194px}
-.personal-info .inner.info-2 li.certifi,
-.personal-info .inner.info-2 li.file,
-.personal-info .inner.info-2 li.progress{height:43px;padding-top:5px}
-.personal-info .inner.info-2 li.certifi{margin-left:0;border-left:0}
-.personal-info .inner.info-3 .info-list{overflow:hidden;display:block;border:0;margin-top:5px}
-.personal-info .inner.info-3 .info-list:first-child{margin-top:0}
-.personal-info .inner.info-3 .info-list li{float:left;margin-left:5px;border:1px solid #ddd}
-.personal-info .inner.info-3 .info-list li:first-child{margin-left:0}
-.personal-info .inner.info-3 li.company{width:194px}
-.personal-info .inner.info-3 li.company-part{width:124px}
-.personal-info .inner.info-3 li.company-join{width:223px}
-.personal-info .inner.info-3 li.company-out{width:219px}
-.personal-info .inner.info-3 li.company-join,
-.personal-info .inner.info-3 li.company-out{border:0}
-.personal-info .inner.info-3 li.company-join .label,
-.personal-info .inner.info-3 li.company-out .label{position:relative;top:13px;display:inline-block;margin-left:9px;font-weight:700;color:#707070}
-.personal-info .inner.info-3 li.company-join input,
-.personal-info .inner.info-3 li.company-out input{float:right;border:1px solid #ddd;width:147px}
-.personal-info .inner.info-3 li.certifi,
-.personal-info .inner.info-3 li.file,
-.personal-info .inner.info-3 li.progress{height:43px;padding-top:5px}
-.personal-info .inner.info-3 li.certifi{margin-left:0;border-left:0}
-.personal-info .add-list{overflow:hidden;margin-top:12px}
-.personal-info .add-list button{float:left;width:36px;height:36px;padding:0;border:1px solid #e0e0e0;text-align:center;line-height:36px;font-size:18px;font-weight:700;color:#777;cursor:pointer}
-.personal-info .add-list button:first-child{margin-right:4px}
-.js-change{margin-top:5px}
-.ui-dialog .ui-dialog-buttonpane button{display:inline-block;width:77px;height:31px;background:#202020;color:#fff;font-size:14px;text-align:center;line-height:31px;border-radius:0;border:0;padding:0}
-#progressbar{margin-top:20px}
-.progress-label{font-weight:bold;text-shadow:1px 1px 0 #fff;text-align:center;padding-top:7px}
-.ui-dialog-titlebar-close{display:none}
-.ui-corner-all,
-.ui-corner-bottom,
-.ui-corner-br,
-.ui-corner-right{border-bottom-right-radius:0}
-.ui-dialog-titlebar{background:#3c3c40;color:#fff;border:0}
-.ui-progressbar-value{background:#f58025}
-.pgb{margin-top:20px}
-.regist-wrap{overflow:hidden}
-.regist-wrap #career4,
-.regist-wrap #dialog6,
-.regist-wrap #license4{display:none}
-.btn-wrap{float:right;overflow:hidden;margin-top:20px}
-.btn-wrap a{float:left;height:43px;line-height:43px;color:#fff;background:#202020;text-align:center;padding:0 15px}
-.btn-wrap a:first-child{margin-right:10px}
-.hide{visibility:hidden}
-.progress-label2{font-weight:bold;text-shadow:1px 1px 0 #fff;text-align:center;padding-top:7px}
+
+/* 개인 기본 사항 */
+.personal-basics {
+    padding: 27px 116px 16px 34px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    color: #707070;
+}
+.personal-basics .inner {
+    position: relative;
+    margin-top: 23px;
+}
+.personal-basics .inner .photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 128px;
+    height: 158px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.personal-basics .inner .photo img {
+    width: 128px;
+    height: 158px;
+}
+.personal-basics .inner > ul {
+    margin-left: 155px;
+    padding-top: 23px;
+}
+.personal-basics .inner > ul > li {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+}
+.personal-basics .inner > ul > li > strong,
+.personal-basics .inner > ul > li > span {
+    float: left;
+}
+.personal-basics .inner > ul > li > span:not(.input-box) {
+    font-weight: bold;
+}
+.personal-basics .inner > ul > li:nth-child(3),
+.personal-basics .inner > ul > li:nth-child(4) {
+    margin-top: 20px;
+}
+.personal-basics .inner > ul > li:nth-child(3) > strong,
+.personal-basics .inner > ul > li:nth-child(4) > strong {
+    line-height: 43px;
+}
+.personal-basics .inner > ul > li:nth-child(even) {
+    padding-left: 45px;
+}
+.personal-basics .inner > ul > li:nth-child(even) > strong {
+    width: 107px;
+}
+.personal-basics .inner > ul > .address {
+    width: 100%;
+    margin-top: 11px;
+}
+.personal-basics .inner > ul > .address > strong {
+    line-height: 43px;
+}
+.personal-basics .inner > ul > li:nth-child(3) > strong,
+.personal-basics .inner > ul > li:nth-child(5) > strong{
+    width: 98px;
+}
+.personal-basics .inner > ul > .address .btn-search {
+    float: right;
+    width: 43px;
+    height: 43px;
+    text-indent: -9999px;
+    border: 1px solid #ddd;
+    background:#fff url(../images/ico-search.jpg) no-repeat center;
+    cursor: pointer;
+}
+.personal-basics .inner > ul > .address .address-2 {
+    margin-left: 7px;
+}
+
+/* 학력 사항 */
+.personal-info{
+    border-width:0 1px 1px 1px;
+    border-style:solid;
+    border-color:#ddd;
+}
+.personal-info h3{
+    height:65px;
+    padding:0 40px;
+    border-top:1px solid #ddd;
+    font-size:20px;
+    line-height:65px;
+}
+.personal-info h3:first-child{
+    border:0
+}
+.personal-info h3::before{
+    content:'';
+    clear:both;
+    display:inline-block;
+    width:7px;
+    height:7px;
+    margin-right:10px;
+    background:#585858;
+    border-radius:100%;
+    vertical-align:middle;
+}
+.personal-info .inner{
+    padding:0 30px 25px
+}
+.personal-info .inner .header{
+    display:table;
+    width:100%;
+    height:43px;
+    border-collapse: collapse;
+    line-height:43px;
+}
+.personal-info .inner .header > li{
+    display:table-cell;
+    padding:0;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    background-color:#f8f8f8;
+    text-align:center;
+    font-weight:bold;
+    vertical-align: middle;
+}
+.personal-info .inner .header > li:first-child{
+    border-left: 1px solid #ddd;
+}
+.personal-info .inner.profile .item-check {
+    width: 40px;
+}
+.personal-info .inner.profile .degree {
+    width: 76px;
+}
+.personal-info .inner.profile .school-name {
+    width: 125px;
+}
+.personal-info .inner.profile .department-name {
+    width: 154px;
+}
+.personal-info .inner.profile .entrance-date {
+    width: 120px;
+}
+.personal-info .inner.profile .graduation-date {
+    width: 120px;
+}
+.personal-info .inner.profile .graduated {
+    width: 67px;
+}
+.personal-info .inner.profile .grade {
+    width: 89px;
+}
+.personal-info .inner.profile .file {
+    width: 117px;
+}
+.personal-info .inner.profile .progress {
+    width: 96px;
+}
+.personal-info .inner.profile .certifi {
+    width: 97px;
+}
+.personal-info .info-list {
+    display: table;
+    width: 100%;
+    margin-top: 6px;
+    border-collapse: collapse;
+}
+.personal-info .info-list > li {
+    position: relative;
+    display: table-cell;
+    border: 1px solid #ddd;
+}
+.personal-info .info-list > li input {
+    height: 42px;
+}
+.personal-info .info-list .item-check {
+    text-align: center;
+    vertical-align: middle;
+}
+.personal-info .info-list .grade {
+    padding: 5px 0;
+    text-align: center;
+}
+.personal-info .info-list .grade input {
+    height: 30px;
+    padding: 0 2px;
+}
+.personal-info .info-list .progress,
+.personal-info .info-list .certifi {
+    text-align: center;
+}
+
+.personal-info .btn-box {
+    overflow: hidden;
+    margin-top: 12px;
+}
+.personal-info .btn-box .btn-list {
+    float: left;
+    width: 35px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+}
+.personal-info .btn-box .btn-list:first-child {
+    margin-right: 4px;
+}
+
+/* 경력 사항 */
+.career > ul {
+    overflow: hidden;
+}
+.career > ul > li {
+    position: relative;
+    float: left;
+    border: 1px solid #ddd;
+}
+.career > ul .item-check {
+    width: 40px;
+    height: 100%;
+    line-height: 43px;
+    text-align: center;
+}
+.career > ul .company {
+    width: 194px;
+}
+.career > ul .part {
+    width: 124px;
+    margin-left: 5px;
+}
+.career > ul .join-date {
+    overflow: hidden;
+    margin-left: 14px;
+    border: 0;
+}
+.career > ul .out-date {
+    overflow: hidden;
+    margin-left: 9px;
+    border: 0;
+}
+.career > ul .join-date input,
+.career > ul .out-date input {
+    width: 127px;
+}
+.career > ul .join-date label,
+.career > ul .out-date label {
+    float: left;
+    margin-right: 10.5px;
+    line-height: 43px;
+}
+.career > ul .file {
+    margin-left: 6px;
+    width: 118px;
+    height: 43px;
+    padding: 5px 7px;
+}
+.career > ul .progress {
+    width: 97px;
+    height: 43px;
+    margin-left: 6px;
+    padding: 5px 10px;
+}
+.career > ul .certifi {
+    width: 97px;
+    height: 43px;
+    border-left: 0;
+    padding: 5px 10px;
+}
+
+/* 외국어 */
+.lang > ul {
+    overflow: hidden;
+}
+.lang > ul > li {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+}
+.lang > ul .license-type {
+    width: 97px;
+    margin-left: 0;
+}
+.lang > ul .license-type select {
+    border: 0;
+}
+.lang > ul .lang-type {
+    width: 100px;
+}
+.lang > ul .test-type {
+    width: 100px;
+}
+.lang > ul .test-score {
+    width: 100px;
+}
+.lang > ul .unique {
+    width: 80px;
+}
+.lang > ul .agency-type {
+    width: 100px;
+}
+.lang > ul .get-date {
+    border: 0;
+}
+.lang > ul .get-date input {
+    width: 122px;
+}
+.lang > ul .lang-type {
+    width: 100px;
+}
+.lang > ul .file {
+    width: 118px;
+    height: 43px;
+    padding: 5px 7px;
+}
+.lang > ul .progress {
+    width: 97px;
+    height: 43px;
+    padding: 5px 10px;
+}
+.lang > ul .certifi {
+    width: 97px;
+    height: 43px;
+    margin-left: 0;
+    border-left: 0;
+    padding: 5px 10px;
+}
 
 /* resume Builder */
 .builder-wrap h2{text-align:center;margin-top:75px;margin-bottom:60px !important}
