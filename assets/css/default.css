@@ -212,3 +212,15 @@ input[type="radio"]:checked{background:#000}
 .builder-wrap .btn-wrap a{float:left;height:43px;line-height:43px;color:#fff;background:#202020;text-align:center;margin-left:10px;padding:0 15px}
 .builder-wrap .btn-wrap a:first-child{margin-left:0}
 .builder-wrap .btn-wrap a.align-right{float:right}
+
+
+/* 기업소개 */
+.job-wrap .job-list {}
+.job-wrap .job-list:after{content:""; display:block; clear:both;}
+.job-wrap .job-list li{float:left; padding:0 0 8px 8px; z-index:1;width:33.33%;}
+.job-wrap .job-list ul li {float:none; padding:0;width:;}
+.job-wrap .job-list li > a{display:block; width:100%; height:205px; position:relative; border:1px solid #c8cbd0; padding:0 20px;letter-spacing:-0.5px; color:#333; background-color:#fff;}
+.job-wrap a:hover,
+.job-wrap a:focus{border:1px solid #3399ff;}
+.job-wrap a .logo{display:block; text-align:center; padding:15px 0 17px;}
+.job-wrap a .btn-wrap{position:absolute; right:15px; bottom:10px; z-index:2;}
