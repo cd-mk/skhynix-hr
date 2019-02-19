@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SK하이닉 HR -커리어패스</title>
+  <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.css">
   <link rel="stylesheet" href="../assets/css/common.css">
   <link rel="stylesheet" href="../assets/css/default.css">
 
@@ -19,8 +20,6 @@
         <p class="title-text">인증받은 커리어로 시작합니다!</p>
       </div>
     </div>
-
-
 
     <div id="container">
       <div class="contents regist-wrap">
@@ -92,8 +91,8 @@
             <ul class="info-list">
               <li class="item-check">
                 <span class="check-box no-text">
-                  <input type="checkbox" id="chk1">
-                  <label for="chk1">선택1</label>
+                  <input type="checkbox" id="profile-chk1" disabled>
+                  <label for="profile-chk1">선택</label>
                 </span>
               </li>
               <li class="degree">
@@ -106,22 +105,22 @@
                 </select>
               </li>
               <li class="school-name">
-                <label for="middleScholl" class="blind">학교 입력</label>
-                <input type="text" id="middleScholl" class="input-full type2">
+                <label for="middleScholl1" class="blind">학교 입력</label>
+                <input type="text" id="middleScholl1" class="input-full type2">
                 <span class="input-clear">입력내용 지우기</span>
               </li>
               <li class="department-name">
-                <label for="department" class="blind">학과명 입력</label>
-                <input type="text" id="department" class="input-full type2">
+                <label for="department1" class="blind">학과명 입력</label>
+                <input type="text" id="department1" class="input-full type2">
                 <span class="input-clear">입력내용 지우기</span>
               </li>
               <li class="entrance-date">
-                <label for="entranceDate" class="blind">입학일 입력</label>
-                <input type="text" class="input-date input-full type2" id="entranceDate">
+                <label for="entranceDate1" class="blind">입학일 입력</label>
+                <input type="text" class="input-date input-full type2" id="entranceDate1">
               </li>
               <li class="graduation-date">
-                <label for="graduationDate" class="blind">졸업일 입력</label>
-                <input type="text" class="input-date input-full type2" id="graduationDate">
+                <label for="graduationDate1" class="blind">졸업일 입력</label>
+                <input type="text" class="input-date input-full type2" id="graduationDate1">
               </li>
               <li class="graduated">
                 <select class="size-full">
@@ -131,17 +130,17 @@
               </li>
               <li class="grade">
                 <span>
-                  <label for="gradeScore1" class="blind">입학일 입력</label>
+                  <label for="gradeScore1" class="blind">학점 입력</label>
                   <input type="text" class="input-xsmall" id="gradeScore1">
                 </span>
                 <span>/</span>
                 <span>
-                  <label for="gradeScore2" class="blind">입학일 입력</label>
-                  <input type="text" class="input-xsmall" id="gradeScore2">
+                  <label for="maxGradeScore1" class="blind">최대 학점 입력</label>
+                  <input type="text" class="input-xsmall" id="maxGradeScore1">
                 </span>
               </li>
               <li class="file">
-                <input type="file" id="file-search"><label for="file-search">찾기</label>
+                <input type="file" id="file-search1"><label for="file-search1">찾기</label>
                 <button type="button" class="btn-save">저장</button>
               </li>
               <li class="progress">
@@ -151,7 +150,7 @@
                 <button type="button" class="btn-request point-gray">인증요청</button>
               </li>
             </ul>
-            <div class="btn-box">
+            <div class="btn-box js-list">
               <button class="btn-list add">+</button>
               <button class="btn-list remove">-</button>
             </div>
@@ -159,11 +158,11 @@
 
           <h3>경력</h3>
           <div class="inner career">
-            <ul>
+            <ul  class="info-list">
               <li class="item-check">
                 <span class="check-box no-text">
-                  <input type="checkbox" id="chk1">
-                  <label for="chk1">선택1</label>
+                  <input type="checkbox" id="career-chk1" disabled>
+                  <label for="career-chk1">선택</label>
                 </span>
               </li>
               <li class="company">
@@ -194,7 +193,7 @@
                 <button type="button" class="btn-request point-gray">인증요청</button>
               </li>
             </ul>
-            <div class="btn-box">
+            <div class="btn-box js-list">
               <button class="btn-list add">+</button>
               <button class="btn-list remove">-</button>
             </div>
@@ -202,11 +201,11 @@
           
           <h3>외국어</h3>
           <div class="inner lang">
-            <ul>
+            <ul class="info-list">
               <li class="item-check">
                 <span class="check-box no-text">
-                  <input type="checkbox" id="chk1">
-                  <label for="chk1">선택1</label>
+                  <input type="checkbox" id="lang-chk1" disabled>
+                  <label for="lang-chk1">선택</label>
                 </span>
               </li>
               <li class="license-type">
@@ -255,27 +254,63 @@
                 <button type="button" class="btn-request point-gray">인증요청</button>
               </li>
             </ul>
-            <div class="btn-box">
+            <div class="btn-box js-list">
               <button class="btn-list add">+</button>
               <button class="btn-list remove">-</button>
             </div>
           </div>
 
           <h3>자격증/면허</h3>
-          <div class="inner">
-
+          <div class="inner license">
+            <ul class="info-list">
+              <li class="item-check">
+                <span class="check-box no-text">
+                  <input type="checkbox" id="license-chk1" disabled>
+                  <label for="license-chk1">선택</label>
+                </span>
+              </li>
+              <li class="license-type">
+                <select>
+                  <option>자격증/면허증</option>
+                  <option>자동차운전면허증</option>
+                  <option>수상내역/공모전</option>
+                </select>
+              </li>
+              <li class="license-name">
+                <label for="license1" class="blind">자격증명 입력</label>
+                <input type="text" id="license1" class="input-full type2" placeholder="자격증명">
+                <span class="input-clear">입력내용 지우기</span>
+              </li>
+              <li class="license-agency">
+                <label for="license-agency1" class="blind">발급기관 입력</label>
+                <input type="text" id="license-agency1" class="input-full type2" placeholder="발급 기관">
+                <span class="input-clear">입력내용 지우기</span>
+              </li>
+              <li class="get-date">
+                <label for="getDate2">취득일</label>
+                <input type="text" id="getDate2" class="input-date">
+              </li>
+              <li class="file">
+                파일파일
+              </li>
+              <li class="progress">
+                <span class="btn-state point-brown">인증대기</span>
+              </li>
+              <li class="certifi">
+                <button type="button" class="btn-request point-gray">인증요청</button>
+              </li>
+            </ul>
+            <div class="btn-box js-list">
+              <button class="btn-list add">+</button>
+              <button class="btn-list remove">-</button>
+            </div>
           </div>
-        <div class="btn-wrap">
-          <a href="#url">저장하기</a>
-          <a href="#url">통합인증하기</a>
+          
         </div>
-
-        <!-- 인증요청 progress -->
-        <div id="dialog" title="인증요청">
-          <div class="progress-label">인증시작..</div>
-          <div id="progressbar" class="pgb"></div>
+        <div class="btn-wrap align-center">
+          <button type="button" class="btn point-black"><span>저장하기</span></button>
+          <button type="button" class="btn point-black"><span>통합인증하기</span></button>
         </div>
-
       </div>
     </div>
     <!-- S: FOOTER AREA -->
@@ -285,11 +320,11 @@
     
   </div>
 
-  <script src="../assets/js/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="../assets/js/common.js"></script>
-  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
+  <!-- <script src="../assets/js/common.js"></script> -->
+  <script src="../assets/js/new-common.js"></script>
+  <!-- <script src="../assets/js/popup.js"></script> -->
 
   <script type="text/javascript">
     $(document).ready(function () {

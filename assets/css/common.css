@@ -311,6 +311,9 @@ input[type="text"].input-full.type2 {
 .check-box.no-text input[type="checkbox"] + label {
     font-size: 0;
 }
+.check-box input[type="checkbox"]:disabled + label:before {
+    border: 1px solid #ddd;
+}
 
 /* type radio */
 .radio-box input[type="radio"] {
