@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SK하이닉 HR - 공지사항관리</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../assets/css/pretty-input.css ">
+  <link rel="stylesheet" href="../assets/css/guide.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <div id="header">
+
+    </div>
+    <div class="keyvisual">
+      <div class="text-area">
+        <p class="summary-text">Start with a certified career</p>
+        <p class="title-text">인증받은 커리어로 시작합니다!</p>
+      </div>
+    </div>
+
+    <div id="container">
+      <div class="contents">
+        <h2>기업 정보 상세 페이지 등록</h2>
+        <form>
+            <fieldset>
+                <legend>기업정보 상세페이지 등록을 위한 입력폼</legend>
+                <table>
+                    <caption>기업정보 상세페이지 등록을 위한 표</caption>
+                    <tbody>
+                        <tr>
+                            <th><label for="ipt1">기업명</label></th>
+                            <td class="input-box">
+                                <input type="text" id="ipt1" class="input-medium" placeholder="회사명을 입력해 주세요">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt2">기업 1줄 소개</label></th>
+                            <td class="input-box">
+                                <input type="text" id="ipt2" class="input-large" placeholder="(0/100byte)">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt3">CI등록</label></th>
+                            <td>
+                                <input type="file" id="ipt3" class="input-medium">
+                                <button type="button">찾아보기</button>
+                                <span>※최대 50MB</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt4">기업규모</label></th>
+                            <td>
+                                <select id="ipt4">
+                                    <option>선택</option>
+                                    <option>대기업</option>
+                                    <option>중견기업</option>
+                                    <option>중소기업</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3"><label for="ipt5">업종</label></th>
+                            <td>
+                                <select id="ipt5">
+                                    <option>선택</option>
+                                    <option>반도체</option>
+                                    <option>화학,에너지</option>
+                                    <option>제조업</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="input-small"><span>원</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="input-small"><span>명</span></td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3"><label for="ipt6">복지</label></th>
+                            <td>
+                                <div class="input-box">
+                                    <input type="text" class="input-medium" id="ipt6">
+                                    <span class="input-clear">입력내용 지우기</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" class="input-medium" title="복지 입력 창">
+                                    <span class="input-clear">입력내용 지우기</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-box">
+                                    <input type="text" class="input-medium" title="복지 입력 창">
+                                    <span class="input-clear">입력내용 지우기</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" class="input-medium" title="복지 입력 창">
+                                    <span class="input-clear">입력내용 지우기</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-box">
+                                    <input type="text" class="input-medium" title="복지 입력 창">
+                                    <span class="input-clear">입력내용 지우기</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" class="input-medium" title="복지 입력 창">
+                                    <span class="input-clear">입력내용 지우기</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt7">기업 소개</label></th>
+                            <td class="input-box">
+                                <textarea id="ipt7"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt8">회사사진</label></th>
+                            <td><input type="file" id="ipt8"><button type="button">찾아보기</button></td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt9">지도</label></th>
+                            <td><input type="file" id="ipt9"><button type="button">찾아보기</button></td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt10">주소</label></th>
+                            <td>
+                                <input type="text" id="ipt10">
+                                <button type="button">찾기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt11">전화번호</label></th>
+                            <td class="input-box">
+                                <input type="text" class="input-medium" id="ipt11">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipt12">홈페이지</label></th>
+                            <td class="input-box">
+                                <input type="text" class="input-medium" id="ipt12">
+                                <span class="input-clear">입력내용 지우기</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+        <div class="btn-wrap align-center">
+            <a href="#url" class="btn point-black">
+                <span>등록</span>
+            </a>
+            <a href="#url" class="btn point-black">
+                <span>취소</span>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- S: FOOTER AREA -->
+    <div id="footer">
+    </div>
+    <!-- E: FOOTER AREA -->
+    </div>
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/new-common.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+
+      }); 
+    </script>
+  
+</body>
+</html>
