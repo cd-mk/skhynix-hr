@@ -17,6 +17,22 @@ var inputClear = {
   wrapClass : '.input-box',
   clearBtnClass : '.input-clear',
   validateClass : 'vaild',
+  init : function() {
+    this.setKeyUp();
+    this.setClearBtn();
+  },
+  setTarget : function() {
+    var targetInputs = [],
+      targetButtons = [];
+    var clearBtn = this.clearBtnClass;
+
+    $(clearBtn).each(function() {
+      targetButtons.push($(this));
+      targetInputs.push($(this).prev('input'));
+    });
+
+    return [targetInputs, targetButtons];
+  },
   setKeyUp : function() {
     var wrapper = $(this.wrapClass).parent();
     var setTarget = this.setTarget(),
@@ -24,6 +40,15 @@ var inputClear = {
 
     for (var i = 0; i < targetInputs.length; i++) {
       $(wrapper).delegate(targetInputs[i], 'keyup', this.showHideClearBtn(targetInputs[i]));
+    }
+  },
+  setClearBtn : function() {
+    var wrapper = $(this.wrapClass).parent();
+    var setTarget = this.setTarget(),
+      targetButtons = setTarget[1];
+
+    for (var i = 0; i < targetButtons.length; i++) {
+      $(wrapper).delegate(targetButtons[i], 'click', this.clickClearBtn(targetButtons[i]));
     }
   },
   showHideClearBtn : function() {
@@ -38,27 +63,6 @@ var inputClear = {
       inputValue ? $clearBtn.addClass(valiClass) : $clearBtn.removeClass(valiClass);
     };
   },
-  setTarget : function() {
-    var targetInputs = [],
-      targetButtons = [];
-    var clearBtn = this.clearBtnClass;
-
-    $(clearBtn).each(function() {
-      targetButtons.push($(this));
-      targetInputs.push($(this).prev('input'));
-    });
-
-    return [targetInputs, targetButtons];
-  },
-  setClearBtn : function() {
-    var wrapper = $(this.wrapClass).parent();
-    var setTarget = this.setTarget(),
-      targetButtons = setTarget[1];
-
-    for (var i = 0; i < targetButtons.length; i++) {
-      $(wrapper).delegate(targetButtons[i], 'click', this.clickClearBtn(targetButtons[i]));
-    }
-  },
   clickClearBtn : function() {
     var valiClass = this.validateClass;
 
@@ -66,10 +70,6 @@ var inputClear = {
       $(button.target).prev('input').val('').focus();
       $(button.target).removeClass(valiClass);
     };
-  },
-  init : function() {
-    this.setKeyUp();
-    this.setClearBtn();
   }
 };
 
@@ -122,6 +122,24 @@ var setPersonalInfoList = function() {
   });
 };
 
+var layerPopup = function() {
+  $('.js-popup-open').each(function() {
+    $(this).on('click', function() {
+      $(this).next('.layer-popup').addClass('open');
+
+      $('body').addClass('layer-open');
+    });
+  });
+
+  $('.js-popup-close').each(function() {
+    $(this).on('click', function() {
+      $(this).closest('.layer-popup').removeClass('open');
+
+      $('body').removeClass('layer-open');
+    });
+  });
+};
+
 $(document).ready(function() {
   if ($('.input-date').length) {
     setDatePicker();
@@ -131,5 +149,8 @@ $(document).ready(function() {
   }
   if ($('.js-list').length) {
     setPersonalInfoList();
+  }
+  if ($('.layer-popup').length) {
+    layerPopup();
   }
 });

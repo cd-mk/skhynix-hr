@@ -232,6 +232,40 @@
                 </div>
             </div>
         </div>
+
+        <div class="guide-section">
+            <h2>Layer Popup</h2>
+            <div class="case-item">
+                <p>
+                    오픈 버튼 다음 위치에 레이어 팝업 마크업 하면됨<br>
+                    팝업 오픈 버튼에 "js-popup-open" 클래스 추가<br>
+                    팝업 닫기 버튼에 "js-popup-close" 클래스 추가<br>
+                    디자인이 나온 상태는 아니므로 "popup-title"의 마크업 위치가 변경될 수 있음(2/22기준)
+                </p>
+
+                <div class="sample-wrap">
+                    <button type="button" class="js-popup-open"><span>팝업 열기</span></button>
+                    <div class="layer-popup">
+                        <div class="popup-wrap">
+                            <h4 class="popup-title point-red">이메일 인증</h4>
+                            <div class="popup-con">
+                                <p>이메일 인증을 완료하였습니다</p>
+                                <div class="btn-wrap align-center" style="margin-top: 20px;">
+                                    <a href="#url" class="btn point-black js-popup-close"><span>확인</span></a>
+                                    <a href="#url" class="btn point-black js-popup-close"><span>취소</span></a>
+                                </div>
+                                <button type="button" class="btn-popup-close js-popup-close" title="팝업 닫기">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dim"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
     <script src="./assets/js/jquery-ui.min.js"></script>
