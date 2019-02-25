@@ -413,6 +413,7 @@ input[type="file"] + label{display:inline-block;width:48px;height:31px;backgroun
     top: 0;
     width: 100%;
     height: 100%;
+    z-index: 99;
 }
 .layer-popup .popup-wrap {
     position: absolute;

@@ -32,7 +32,53 @@
         <div class="personal-basics">
           <h3>개인기본사항</h3>
           <div class="inner">
-            <div class="photo"><img src="../assets/images/img-kang.jpg" alt=""></div>
+            <div class="photo">
+              <img src="../assets/images/img-kang.jpg" alt="">
+              <button type="button" class="edit-photo js-popup-open">사진변경</button>
+              <!-- 사진변경 layer popup -->
+              <div class="layer-popup">
+                <div class="popup-wrap">
+                  <h4 class="popup-title point-red">사진 올리기</h4>
+                  <div class="popup-con">
+                    <p>권장 사진 사이즈는 100*130 픽셀이며, gif, jpg 파일만 등록 가능합니다.</p>
+                    
+                    <div class="btn-wrap align-center">
+                      <button type="submit" class="btn point-black"><span>등록</span></button>
+                      <button type="button" class="btn point-black js-popup-close"><span>취소</span></button>
+                    </div>
+                    
+                    <button type="button" class="btn-popup-close js-popup-close" title="팝업 닫기">
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="dim"></div>
+              </div>
+
+              <button type="button" class="delete-photo js-popup-open"><span class="blind">사진삭제</span></button>
+              <!-- 사진삭제 layer popup -->
+              <div class="layer-popup">
+                <div class="popup-wrap">
+                  <h4 class="popup-title point-red">사진 삭제</h4>
+                  <div class="popup-con">
+                    <p>사진을 삭제하면 입사 지원서에서도 삭제됩니다. 등록된 사진을 삭제하시겠습니까?</p>
+
+                    <div class="btn-wrap align-center">
+                      <button type="submit" class="btn point-black"><span>확인</span></button>
+                      <button type="button" class="btn point-black js-popup-close"><span>취소</span></button>
+                    </div>
+                    
+                    <button type="button" class="btn-popup-close js-popup-close" title="팝업 닫기">
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="dim"></div>
+              </div>
+            </div>
+            
             <ul class="clearfix">
               <li>
                 <strong>이름 : </strong>
@@ -322,8 +368,7 @@
 
   <script src="../assets/js/jquery-3.2.1.min.js"></script>
   <script src="../assets/js/jquery-ui.min.js"></script>
-  <!-- <script src="../assets/js/common.js"></script> -->
-  <script src="../assets/js/new-common.js"></script>
+  <script src="../assets/js/common.js"></script>
   <!-- <script src="../assets/js/popup.js"></script> -->
 
   <script type="text/javascript">
